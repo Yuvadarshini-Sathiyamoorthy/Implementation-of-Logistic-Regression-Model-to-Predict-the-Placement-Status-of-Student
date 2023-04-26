@@ -69,18 +69,63 @@ lr = LogisticRegression(solver = "liblinear")# a library for large
 lr.fit(x_train,y_train)
 y_pred = lr.predict(x_test)
 y_pred
+
+
+from sklearn.metrics import accuracy_score
+accuracy = accuracy_score(y_test,y_pred)
+(accuracy)
+
+
+from sklearn.metrics import confusion_matrix
+confusion = confusion_matrix(y_test,y_pred)
+(confusion)
+
+
+from sklearn.metrics import classification_report
+classification_report1 = classification_report(y_test,y_pred)
+print(classification_report1)
+
+
+lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]])
 */
 ```
 
 ## Output:
+### 1.Placement data
 ![41](https://user-images.githubusercontent.com/93482485/230104007-bfc6a3cd-28e6-4c46-bbe6-535147b4238b.jpg)
+
+### 2.Salary data
 ![42](https://user-images.githubusercontent.com/93482485/230104035-25bd27c7-4dbb-41ce-8339-4d88f02acf15.jpg)
+
+### 3.Checking the null() function
 ![43](https://user-images.githubusercontent.com/93482485/230104071-d076bd1a-541e-49e6-aa2d-847d68be9055.jpg)
+
+### 4. Data Duplicate
 ![44](https://user-images.githubusercontent.com/93482485/230104101-5c4107dd-9837-494d-a539-aa6295bbf871.jpg)
+
+### 5. Print data
 ![45](https://user-images.githubusercontent.com/93482485/230104156-a5e4fad9-1581-4582-9fc5-071b10052948.jpg)
+
+### 6. Data-status
 ![46](https://user-images.githubusercontent.com/93482485/230104192-51a65e3d-e6a1-4313-93af-0671ac7dd5df.jpg)
 ![47](https://user-images.githubusercontent.com/93482485/230104250-24c455c3-f88a-4a49-88ee-ccefb45ac6b8.jpg)
+
+### 7. y_prediction array
 ![48](https://user-images.githubusercontent.com/93482485/230104296-9e040fb1-8a90-4257-87b9-12a19d26aa40.jpg)
+
+### 8.Accuracy value
+![49](https://user-images.githubusercontent.com/93482485/234611033-19984f65-d774-4661-8d17-ef408a303946.jpg)
+
+### 9. Confusion array
+![410](https://user-images.githubusercontent.com/93482485/234611170-1e101d1a-4d30-49a0-9f07-458ec549d47c.jpg)
+
+### 10. Classification report
+![411](https://user-images.githubusercontent.com/93482485/234611191-ea69b8a5-5544-49dc-8c8d-10563716a9b8.jpg)
+
+### 11.Prediction of LR
+![412](https://user-images.githubusercontent.com/93482485/234611233-f152e72f-ca98-4f1c-b176-60dad6a4bf9b.jpg)
+
+
 
 ## Result:
 Thus the program to implement the the Logistic Regression Model to Predict the Placement Status of Student is written and verified using python programming.
